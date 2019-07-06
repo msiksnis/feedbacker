@@ -23,7 +23,7 @@ passport.use(
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
       callbackURL: "/auth/google/callback",
-      porxy: true
+      proxy: true
     },
     (accessToken, refreshToken, profile, done) => {
       // Checks if user with that googleId already exist in db
